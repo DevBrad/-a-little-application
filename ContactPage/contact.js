@@ -4,21 +4,41 @@ const email = document.querySelector("#email");
 const message = document.querySelector("#message");
 const submit_button = document.querySelector(".submit_button");
 
+function messageTooLong() {
+  message.style.border = "2px solid red";
+  message.value = "";
+  alert(
+    "Your message is too long, please write a message that has 50 words or less"
+  );
+}
+
+function messageOk() {
+  message.style.border = "1px solid gray";
+}
+
 submit_button.addEventListener("click", function () {
   if (name.value == "") {
     name.style.border = "1px solid red";
   } else {
     name.style.border = "1px solid gray";
+    name.style.opacity = "0.5";
   }
   if (surname.value == "") {
     surname.style.border = "1px solid red";
   } else {
     surname.style.border = "1px solid gray";
+    surname.style.opacity = "0.5";
   }
   if (email.value == "") {
     email.style.border = "1px solid red";
   } else if (email.value != "") {
     email.style.border = "1px solid gray";
+    email.style.opacity = "0.5";
+  }
+  if (message.value.length > 50) {
+    messageTooLong();
+  } else if (message.value.length < 50) {
+    messageOk();
   }
 });
 
@@ -41,5 +61,14 @@ clearInputs_button.addEventListener("click", function () {
   }
   if (message.value != "") {
     message.value = "";
+  }
+  if (name.value == "") {
+    name.style.border = "1px solid gray";
+  }
+  if (surname.value == "") {
+    surname.style.border = "1px solid gray";
+  }
+  if (email.value == "") {
+    email.style.border = "1px solid gray";
   }
 });
