@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styleMainPage/mainpage.css" />
+    <title>Document</title>
+  </head>
+  <body onload="showElementOnPageLoad()">
+    <section class="section_header">
+      <header>
+        <nav>
+          <li class="home"><a href="#">Home</a></li>
+          <li class="contact">
+            <a href="/ContactPage/contact.html">Contact</a>
+          </li>
+        </nav>
+        <button class="logout_btn"><a href="/login.html">logout</a></button>
+      </header>
+    </section>
+    <main>
+      <section class="welcome_section">
+        <div class="welcome">
+          <h1>WELCOME</h1>
+        </div>
+      </section>
+      <section class="container_presentation_aboutme">
+        <section class="section_presentation">
+          <div class="container">
+            <p class="para para_one">Mirel Bradley, 25</p>
+            <div class="p_1">
+              <button type="submit" class="cancel_name">Cancel name</button>
+              <button type="submit" class="change_name">Change name</button>
+              <input
+                type="text"
+                id="input_paraOne"
+                placeholder="enter the new name here"
+              />
+            </div>
+            <p class="para para_two">Junior Web Developer</p>
+            <div class="p_2">
+              <button type="submit" class="cancel_jobPosition">
+                Cancel job position
+              </button>
+              <button type="submit" class="change_job">
+                Change job position
+              </button>
+              <input
+                type="text"
+                id="input_paraTwo"
+                placeholder="enter the new job position"
+              />
+            </div>
+            <p class="para para_three">Cluj-Napoca</p>
+            <div class="p_3">
+              <button type="submit" class="cancel_city">
+                Cancel actual city
+              </button>
+              <button type="submit" class="change_city">Change city</button>
+              <input
+                type="text"
+                placeholder="enter the city here"
+                id="input_paraThree"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="aboutMe_section">
+          <div class="container_aboutMe">
+            <h2 class="header_aboutme">About me</h2>
+            <!-- <p>
+              Hello, my name is Mirel Mandrut and i am 25 years old. <br />
+              I was born in Cluj-Napoca, but i lived in Italy for 16 years with
+              my family where i frequented the entire shchool. <br />
+              Me and my family 4 years ago returned here in cluj because life in
+              Italy had become difficult. <br />
+              I started to learn Web Development 8 months ago at the Informal
+              School of IT.
+            </p> -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+            laboriosam odio perferendis odit, et assumenda iure eum quasi soluta
+            explicabo iusto sequi saepe, dolorem voluptates aliquam dolore!
+            Quibusdam quidem nam, dolores sapiente quae fugit. Et aliquid
+            dignissimos quo cupiditate laboriosam sapiente necessitatibus quasi
+            aliquam est, soluta obcaecati maxime illo consectetur consequatur
+            non commodi? Amet, eaque rem! Assumenda, esse obcaecati distinctio
+            consectetur minus saepe cupiditate magnam dignissimos molestias
+            ducimus labore libero quos in eius praesentium reiciendis sint
+            recusandae nisi sequi unde nemo tempora? Voluptate totam eligendi
+            labore quibusdam illum laborum quae doloremque voluptates
+            repudiandae non. Nemo non odio quaerat saepe fugit.
+          </div>
+        </section>
+      </section>
+      <section class="section_skills">
+        <details>
+          <summary>My skills :</summary>
+          <ul>
+            <li>HTML</li>
+            <li>CSS (SASS)</li>
+            <li>JavaScript</li>
+            <li>Basic React</li>
+            <li>Basic JQuery</li>
+          </ul>
+        </details>
+      </section>
+    </main>
+    <script src="/Main_Page/mainpage.js"></script>
+    <script src="name.js"></script>
+    <script src="jobposition.js"></script>
+    <script src="city.js"></script>
+  </body>
+</html>

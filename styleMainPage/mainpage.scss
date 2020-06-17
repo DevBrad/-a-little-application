@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  background: #333;
+}
+
+nav li {
+  list-style-type: none;
+  margin: 30px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+.logout_btn {
+  width: 100px;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  float: right;
+  margin: -60px 20px 0 0;
+  position: relative;
+  background-color: white;
+  border: 1px solid gray;
+  z-index: 1;
+}
+
+.logout_btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(231, 225, 225);
+  z-index: -1;
+  transform: scale(0);
+  transition: transform 200ms ease-in;
+}
+
+.logout_btn:hover::after {
+  transform: scale(1);
+}
+
+.logout_btn a {
+  text-decoration: none;
+  color: black;
+}
+
+.home {
+  position: relative;
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.5px;
+  background-color: white;
+  transform: scaleX(0.2);
+  transform-origin: left;
+  transition: transform 200ms ease-in;
+}
+
+.home:hover::after {
+  transform: scaleX(1);
+}
+
+.contact {
+  position: relative;
+}
+
+.contact::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.5px;
+  background-color: white;
+  transform: scaleX(0.2);
+  transform-origin: left;
+  transition: transform 200ms ease-in;
+}
+
+.contact:hover::after {
+  transform: scaleX(1);
+}
+
+.welcome_section {
+  margin: 30px 0 40px 30px;
+  visibility: hidden;
+}
+
+.welcomeStyle {
+  font-family: "Roboto Condensed", sans-serif;
+  color: red;
+  transition: color 1s ease-in, font-size 2s ease-in;
+}
+
+.transition_presentation {
+  transition: 2.5s ease-in;
+}
+
+.section_skills summary {
+  font-size: 24px;
+  margin-left: 5px;
+}
+
+.section_skills ul li {
+  font-size: 18px;
+  margin: 10px;
+}
+.container_presentation_aboutme {
+  display: flex;
+  justify-content: center;
+}
+.section_presentation {
+  width: 600px;
+  height: 100%;
+  border: 2px solid black;
+  border-right: 10px solid currentColor;
+  margin: 0 0 20px 10px;
+}
+.section_presentation p {
+  margin: 1rem 0 6rem 1rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.section_presentation .container {
+  width: 530px;
+  height: 100%;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 15px;
+}
+
+.p_1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 60px;
+  margin-top: -90px;
+}
+
+.p_1 button {
+  cursor: pointer;
+  padding: 4.5px;
+  background: white;
+  border: 1px solid gray;
+  font-size: 12px;
+  outline: none;
+  margin: 0 5px 0 10px;
+}
+
+#input_paraOne {
+  padding: 3px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+#input_paraOne::placeholder {
+  opacity: 0.5;
+}
+
+.p_2 {
+  margin-top: -70px;
+}
+
+.p_2 button {
+  cursor: pointer;
+  padding: 4.5px;
+  background: white;
+  border: 1px solid gray;
+  font-size: 12px;
+  outline: none;
+  margin: 0 5px 0 10px;
+}
+
+#input_paraTwo {
+  padding: 3px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+#input_paraTwo::placeholder {
+  opacity: 0.5;
+}
+
+.p_3 {
+  margin: -70px 0 20px 0;
+}
+
+.p_3 button {
+  cursor: pointer;
+  padding: 4.5px;
+  background: white;
+  border: 1px solid gray;
+  outline: none;
+  margin: 0 5px 0 10px;
+}
+
+#input_paraThree {
+  padding: 3px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+/*about me section==========*/
+.aboutMe_section {
+  width: 600px;
+  height: 100%;
+  border: 2px solid black;
+  border-left: 10px solid currentColor;
+  margin: 0 20px 0 10px;
+}
+
+.header_aboutme {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.header_aboutme::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 20%;
+  background-color: red;
+  height: 2px;
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.container_aboutMe {
+  padding: 10px;
+}
+/*about me section end=============*/
+.para {
+  opacity: 0.5;
+  position: relative;
+}
+
+.para_one::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transform: scaleX(0.8);
+  transform-origin: left;
+}
+
+.para_two::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transform: scaleX(0.6);
+  transform-origin: left;
+}
+
+.para_three::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transform: scaleX(0.4);
+  transform-origin: left;
+}

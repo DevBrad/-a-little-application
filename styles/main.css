@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #3596b5;
+  --second-bg-color: #009efa;
+  --main-text-color: #4b4453;
+}
+
+body {
+  background: var(--main-bg-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+.section_form_validation {
+  background-color: white;
+  width: 550px;
+  height: 500px;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  -webkit-transition: -webkit-box-shadow 600ms ease-in;
+  transition: -webkit-box-shadow 600ms ease-in;
+  transition: box-shadow 600ms ease-in;
+  transition: box-shadow 600ms ease-in, -webkit-box-shadow 600ms ease-in;
+}
+
+.section_form_validation:hover {
+  -webkit-box-shadow: 0px 0px 15px 0.8px;
+          box-shadow: 0px 0px 15px 0.8px;
+  -webkit-transition: -webkit-box-shadow 400ms ease-in;
+  transition: -webkit-box-shadow 400ms ease-in;
+  transition: box-shadow 400ms ease-in;
+  transition: box-shadow 400ms ease-in, -webkit-box-shadow 400ms ease-in;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header_one {
+  font-family: "Roboto Mono", monospace;
+  color: var(--main-text-color);
+  font-size: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.header_one::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -30px;
+  width: 50%;
+  height: 1px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  background: var(--main-bg-color);
+}
+
+form input {
+  width: 300px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: var(1px solid --main-text-color);
+  outline: none;
+}
+
+form input::-webkit-input-placeholder {
+  font-family: "Roboto Mono", monospace;
+}
+
+form input:-ms-input-placeholder {
+  font-family: "Roboto Mono", monospace;
+}
+
+form input::-ms-input-placeholder {
+  font-family: "Roboto Mono", monospace;
+}
+
+form input::placeholder {
+  font-family: "Roboto Mono", monospace;
+}
+
+form label {
+  font-size: 18px;
+  color: var(--main-text-color);
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.submit_btn {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  font-family: "Roboto Mono", monospace;
+  cursor: pointer;
+  color: var(--main-text-color);
+  font-weight: 600;
+  outline: none;
+  margin-top: 10px;
+  position: relative;
+  z-index: 1;
+  background-color: #dadada;
+}
+
+.submit_btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--main-text-color);
+  width: 100%;
+  z-index: -1;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 350ms ease-in;
+  transition: -webkit-transform 350ms ease-in;
+  transition: transform 350ms ease-in;
+  transition: transform 350ms ease-in, -webkit-transform 350ms ease-in;
+}
+
+.submit_btn:hover {
+  color: white;
+}
+
+.submit_btn:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+/*# sourceMappingURL=main.css.map */

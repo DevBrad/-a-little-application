@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#login-button {
+  margin-top: 50vh;
+  border: 0;
+  padding: 2rem;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  outline: none;
+}
+
+#login-button a {
+  text-decoration: none;
+  color: #3596b5;
+}
+
+#login-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #3596b5;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 300ms ease-in;
+}
+
+#login-button:hover a {
+  color: white;
+  letter-spacing: 3px;
+  transition: letter-spacing 200ms ease-in;
+}
+
+#login-button:hover::after {
+  transform: scaleX(1);
+  width: 100%;
+  z-index: -1;
+  transform-origin: left;
+}
